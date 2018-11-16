@@ -1,0 +1,26 @@
+@keyframes copy {
+  0%{
+    opacity: 1
+  }
+  50%{
+    opacity: 0.2
+  }
+   100%{
+    opacity: 1
+  }
+}
+.is-copy,.is-cut{
+  animation: copy 1.4s linear infinite;
+}
+.el-input {
+  &.small {
+    width: 50px;
+    margin-right: 2px;
+  }
+  &.middle{
+    width: 100px;
+  }
+  .el-input__inner {
+    padding: 0 5px;
+  }
+}
