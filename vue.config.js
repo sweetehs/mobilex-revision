@@ -6,16 +6,17 @@ function resolve(dir) {
 module.exports = {
   runtimeCompiler: true, // 运行编译
   lintOnSave: false, // 保存不lint
+  assetsDir: "backend",
   configureWebpack: {
     output: {
       filename: function (c) {
         if (c.chunk.name === "preview") {
-          return "preview/[name].js"
+          return "preview/js/[name].js"
         } else {
-          return "backend/[name].js"
+          return "backend/js/[name].js"
         }
       },
-      chunkFilename: "backend/[name].js"
+      chunkFilename: "backend/js/[name].js"
     }
   },
   chainWebpack: (config) => {
@@ -25,6 +26,13 @@ module.exports = {
         extractCSSPlugin.tap(() => {
           return [{
             filename: function (c) {
+              if (c.chunk.name === "preview") {
+                return "preview/css/[name].css"
+              } else {
+                return "backend/css/[name].css"
+              }
+            },
+            chunkFilename: function (c) {
               if (c.chunk.name === "preview") {
                 return "preview/css/[name].css"
               } else {
