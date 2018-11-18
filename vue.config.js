@@ -77,18 +77,19 @@ module.exports = {
       entry: 'src/pages/wrapper.js',
       template: 'src/pages/wrapper.html',
       filename: 'backend/wrapper.html',
-      chunks: ["vendor"]
+      chunks: ["vendors", "wrapper"]
     },
     inner: {
       entry: 'src/pages/inner.js',
       template: 'src/pages/inner.html',
       filename: 'backend/inner.html',
-      chunks: ["vendor"]
+      chunks: ["vendors", "inner"]
     },
     preview: {
       entry: 'src/pages/preview.js',
       template: 'src/pages/preview.html',
-      filename: 'preview/preview.html'
+      filename: 'preview/preview.html',
+      chunks: ["preview"]
     }
   }
 }

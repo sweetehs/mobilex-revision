@@ -191,7 +191,7 @@
                 <el-tab-pane label="隐" name="hidden"></el-tab-pane>
               </el-tabs>
             </div>
-            <iframe ref="editor" src="/inner.html" frameborder="0"></iframe>
+            <iframe ref="editor" src="/backend/inner.html" frameborder="0"></iframe>
           </Ioswrapper>
         </div>
       </div>
