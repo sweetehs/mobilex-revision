@@ -4,7 +4,7 @@ export function clone(data) {
 export function randomId(num) {
   var returnStr = "",
     charStr = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    num = num || 12
+  num = num || 12
   for (var i = 0; i < num; i++) {
     var index = Math.round(Math.random() * (charStr.length - 1));
     returnStr += charStr.substring(index, index + 1);
@@ -58,7 +58,7 @@ export function loop(arr, judge, callback, parent) {
     }
   })
 }
-export function loopRange(arr, judge, callback, parent){
+export function loopRange(arr, judge, callback, parent) {
   if (!arr) {
     return
   }
@@ -74,7 +74,7 @@ export function loopRange(arr, judge, callback, parent){
       children = children.concat(data.children)
     }
   })
-  if(children.length !== 0 ){
+  if (children.length !== 0) {
     loopRange(children, judge, callback, parent)
   }
 }
@@ -111,4 +111,15 @@ export function handelCssData(css) {
     css["background-image"] = `url(${css["background-image"]})`
   }
   return clone(css)
+}
+export function trim(str) {
+  return str.replace(/\s/g, "")
+}
+export function isRequired(str) {
+  str = str || ""
+  if (trim(str)) {
+    return true
+  } else {
+    return false
+  }
 }

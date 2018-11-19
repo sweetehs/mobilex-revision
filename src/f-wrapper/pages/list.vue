@@ -187,7 +187,7 @@
             url: '/mobilex/subject/save',
             method: "post",
             data: {
-              name: this.addData.name
+              name: this.dialogData.name
             }
           }).then(() => {
             this.ajaxGetList()
