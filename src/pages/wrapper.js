@@ -35,8 +35,8 @@ const ajaxLogin = () => {
     }
   })
 }
-ajaxGetUser().then((ajaxData) => {
-  store.state.$common.username = ajaxData.data.username
+// ajaxGetUser().then((ajaxData) => {
+//   store.state.$common.username = ajaxData.data.username
   new Vue({
     el: '#app',
     router,
@@ -46,4 +46,4 @@ ajaxGetUser().then((ajaxData) => {
     },
     template: '<Wrapper/>'
   })
-})
+// })

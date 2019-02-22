@@ -77,7 +77,7 @@
         this.$emit("save")
       },
       eventPreview(){
-        window.open("/preview.html?id="+this.$route.params.id)
+        window.open("/preview/preview.html?id="+this.$route.params.id)
       }
     }
   }

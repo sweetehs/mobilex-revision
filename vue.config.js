@@ -63,11 +63,11 @@ module.exports = {
   devServer: {
     proxy: {
       "/mobilex/*": {
-        target: "http://localhost:3000",
+        target: "http://localhost:3001",
         changeOrigin: true
       },
       "/image/*": {
-        target: "http://localhost:3000",
+        target: "http://localhost:3001",
         changeOrigin: true
       }
     }
