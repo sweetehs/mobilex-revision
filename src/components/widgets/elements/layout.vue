@@ -5,7 +5,7 @@
 </style>
 
 <template>
-  <div class="widget-layout-wrapper" :style="flex">
+  <div class="widget-layout-wrapper">
     <slot></slot>
   </div>
 </template>
@@ -13,7 +13,7 @@
 <script>
   export default {
     name: "layout",
-    props: ["flex", "istyle"],
+    // props: ["istyle"],
     data() {
       return {}
     }

@@ -26,6 +26,9 @@
           }
         }
       }
+      .fa{
+        margin: 0 2px;
+      }
       .fa-lock {
         color: #888;
       }
@@ -64,7 +67,6 @@
           margin-right: 10px;
           a {
             color: @fontColor;
-            margin-right: 4px;
           }
         }
       }

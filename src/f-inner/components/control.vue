@@ -1,6 +1,7 @@
 <style lang="less">
   .item-control-wrapper {
     position: relative;
+    vertical-align: middle;
     // margin: -1px;
     // padding: 1px;
     // transition: all 0.3s ease;
